@@ -1,4 +1,8 @@
 ---
+import "../styles/global.css";
+import JSX from "../components/JsxMessage.astro";
+import Navigation from "../components/Navigation.astro";
+
 const pageTitle = "Homepage";
 ---
 
@@ -13,8 +17,9 @@ const pageTitle = "Homepage";
 	</head>
 	<body>
 		<p>{pageTitle}</p>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<JSX />
+		<Navigation />
+
 		<h1>Astro Title Change</h1>
 	</body>
 </html>
